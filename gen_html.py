@@ -186,8 +186,8 @@ html = f"""<!DOCTYPE html>
     /* MODAL */
     .modal {{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; align-items: center; justify-content: center; }}
     .modal.active {{ display: flex; }}
-    .modal-content {{ position: relative; width: 95vw; height: 92vh; overflow: auto; display: flex; align-items: flex-start; justify-content: center; }}
-    .modal-img {{ width: 170%; height: auto; max-width: none; display: block; }}
+    .modal-content {{ position: relative; max-width: 95vw; max-height: 95vh; overflow: auto; display: flex; align-items: center; justify-content: center; }}
+    .modal-img {{ width: auto; height: auto; display: block; }}
     .modal-close {{ position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; border: none; width: 44px; height: 44px; border-radius: 50%; font-size: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 1001; }}
     .modal-close:hover {{ background: rgba(0,0,0,0.8); }}
   </style>
