@@ -490,7 +490,7 @@ html = f"""<!DOCTYPE html>
 <section id="roadmap">
   <div class="sec-eyebrow">Q2 2026 Roadmap</div>
   <div class="sec-title">Prioritised Feature Backlog</div>
-  <p class="sec-desc">14 items ranked by execution order, with ICE scores, MRR category, expected impact, and status alignment. <strong>Critical items directly drive the Q2 MRR target.</strong></p>
+  <p class="sec-desc">14 items ranked by execution order, with ICE scores, MRR category, expected impact, and status alignment. <strong>Critical items directly drive the Q2 MRR target.</strong> &mdash; <a href="https://docs.google.com/spreadsheets/d/15smucuCcHUA8aZTHT48MRB-y99SEhxDwrtPfVDTcoTI/edit?gid=0#gid=0" target="_blank" style="color:inherit;">View full backlog &rarr;</a></p>
   <div class="table-wrap">
     <table>
       <thead>
