@@ -214,7 +214,7 @@ html = f"""<!DOCTYPE html>
   <div class="hero-label">Q2 2026 &middot; Product Strategy &middot; V2</div>
   <h1>+6% MRR growth through reduced time to value and upsell mechanisms</h1>
   <div class="hero-kpis">
-    <div class="hero-kpi accent"><span class="val">$18,269</span><span class="lbl">MRR Growth Target</span></div>
+    <div class="hero-kpi accent"><span class="val">$18,167</span><span class="lbl">MRR Growth Target</span></div>
     <div class="hero-kpi"><span class="val">284</span><span class="lbl">New Accounts / Month</span></div>
     <div class="hero-kpi"><span class="val">105</span><span class="lbl">Upsells / Month</span></div>
     <div class="hero-kpi"><span class="val">6%</span><span class="lbl">Target MRR Increase</span></div>
@@ -240,11 +240,11 @@ html = f"""<!DOCTYPE html>
         <table>
           <thead><tr><th>Tier</th><th>Proj. ARPU</th><th class="num">New (G4)</th><th class="num">Upsells</th><th class="num">New MRR</th><th class="num">Upsell MRR</th></tr></thead>
           <tbody>
-            <tr><td>Starter</td><td>$11.43</td><td class="num">120</td><td class="num">&mdash;</td><td class="num">$2,286</td><td class="num">&mdash;</td></tr>
-            <tr><td>Growth</td><td>$40.61</td><td class="num">80</td><td class="num">86</td><td class="num">$2,437</td><td class="num">$2,509</td></tr>
+            <tr><td>Starter</td><td>$11.43</td><td class="num">120</td><td class="num">&mdash;</td><td class="num">$1,372</td><td class="num">&mdash;</td></tr>
+            <tr><td>Growth</td><td>$40.61</td><td class="num">80</td><td class="num">86</td><td class="num">$3,249</td><td class="num">$2,509</td></tr>
             <tr><td>Pro</td><td>$203.52</td><td class="num">20</td><td class="num">17</td><td class="num">$4,070</td><td class="num">$2,769</td></tr>
             <tr><td>Enterprise</td><td>$767.31</td><td class="num">4</td><td class="num">2</td><td class="num">$3,069</td><td class="num">$1,128</td></tr>
-            <tr class="total-row"><td>TOTAL</td><td>&mdash;</td><td class="num">284 <small style="font-weight:400;color:#64748b">(+20% vs Q2&apos;25)</small></td><td class="num">105</td><td class="num">$11,862</td><td class="num">$6,407</td></tr>
+            <tr class="total-row"><td>TOTAL</td><td>&mdash;</td><td class="num">224 <small style="font-weight:400;color:#64748b">(+20% vs Q2&apos;25)</small></td><td class="num">105</td><td class="num">$11,760</td><td class="num">$6,407</td></tr>
           </tbody>
         </table>
       </div>
@@ -255,7 +255,7 @@ html = f"""<!DOCTYPE html>
         <table>
           <thead><tr><th>Metric</th><th>Q2 Target</th></tr></thead>
           <tbody>
-            <tr><td>MRR Growth</td><td><strong>$18,269 &asymp; 6%</strong></td></tr>
+            <tr><td>MRR Growth</td><td><strong>$18,167 &asymp; 6%</strong></td></tr>
             <tr><td>G1 Conversion Rate</td><td><strong>&gt;2.5%</strong> <span style="color:#94a3b8;font-size:12px">(currently 1.54%)</span></td></tr>
             <tr><td>G4/G1 Conversion</td><td><strong>&gt;30%</strong> <span style="color:#94a3b8;font-size:12px">(now 26%)</span></td></tr>
             <tr><td>Blended ARPU (LT)</td><td><strong>&gt;$30</strong> <span style="color:#94a3b8;font-size:12px">(+25%)</span></td></tr>
