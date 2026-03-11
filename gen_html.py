@@ -737,7 +737,7 @@ document.addEventListener('keydown', function(e) {{
 </body>
 </html>"""
 
-out = 'D:/TouchStay/Claude Projects/touchstay-q2-strategy.html'
+out = 'D:/TouchStay/Claude Projects/index.html'
 with open(out, 'w', encoding='utf-8') as f:
     f.write(html)
 print(f'Done. Size: {len(html)//1024} KB')
