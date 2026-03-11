@@ -172,8 +172,8 @@
     /* MODAL */
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; align-items: center; justify-content: center; }
     .modal.active { display: flex; }
-    .modal-content { position: relative; width: 80vw; height: 80vh; display: flex; align-items: center; justify-content: center; }
-    .modal-img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
+    .modal-content { position: relative; width: 95vw; height: 92vh; overflow: auto; display: flex; align-items: flex-start; justify-content: center; }
+    .modal-img { width: 170%; height: auto; max-width: none; display: block; }
     .modal-close { position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; border: none; width: 44px; height: 44px; border-radius: 50%; font-size: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 1001; }
     .modal-close:hover { background: rgba(0,0,0,0.8); }
   </style>
@@ -226,11 +226,11 @@
         <table>
           <thead><tr><th>Tier</th><th>Proj. ARPU</th><th class="num">New (G4)</th><th class="num">Upsells</th><th class="num">New MRR</th><th class="num">Upsell MRR</th></tr></thead>
           <tbody>
-            <tr><td>Starter</td><td>$11.43</td><td class="num">120</td><td class="num">&mdash;</td><td class="num">$1,372</td><td class="num">&mdash;</td></tr>
-            <tr><td>Growth</td><td>$40.61</td><td class="num">80</td><td class="num">86</td><td class="num">$3,249</td><td class="num">$2,509</td></tr>
-            <tr><td>Pro</td><td>$203.52</td><td class="num">20</td><td class="num">17</td><td class="num">$4,070</td><td class="num">$2,769</td></tr>
-            <tr><td>Enterprise</td><td>$767.31</td><td class="num">4</td><td class="num">2</td><td class="num">$3,069</td><td class="num">$1,128</td></tr>
-            <tr class="total-row"><td>TOTAL</td><td>&mdash;</td><td class="num">224 <small style="font-weight:400;color:#64748b">(+5% Q4 avg)</small></td><td class="num">105</td><td class="num">$11,760</td><td class="num">$6,407</td></tr>
+            <tr><td>Starter</td><td>$11.43</td><td class="num">120</td><td class="num">&mdash;</td><td class="num">$1,371.60</td><td class="num">&mdash;</td></tr>
+            <tr><td>Growth</td><td>$40.61</td><td class="num">80</td><td class="num">86</td><td class="num">$3,248.80</td><td class="num">$2,509.48</td></tr>
+            <tr><td>Pro</td><td>$203.52</td><td class="num">20</td><td class="num">17</td><td class="num">$4,070.40</td><td class="num">$2,769.47</td></tr>
+            <tr><td>Enterprise</td><td>$767.31</td><td class="num">4</td><td class="num">2</td><td class="num">$3,069.24</td><td class="num">$1,127.58</td></tr>
+            <tr class="total-row"><td>TOTAL</td><td>&mdash;</td><td class="num">224 <small style="font-weight:400;color:#64748b">(+5% Q4 avg)</small></td><td class="num">105</td><td class="num">$11,760.04</td><td class="num">$6,406.53</td></tr>
           </tbody>
         </table>
       </div>
