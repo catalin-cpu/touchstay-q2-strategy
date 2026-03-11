@@ -215,7 +215,7 @@ html = f"""<!DOCTYPE html>
   <h1>+6% MRR growth through reduced time to value and upsell mechanisms</h1>
   <div class="hero-kpis">
     <div class="hero-kpi accent"><span class="val">$18,167</span><span class="lbl">MRR Growth Target</span></div>
-    <div class="hero-kpi"><span class="val">284</span><span class="lbl">New Accounts / Month</span></div>
+    <div class="hero-kpi"><span class="val">224</span><span class="lbl">New Accounts / Month</span></div>
     <div class="hero-kpi"><span class="val">105</span><span class="lbl">Upsells / Month</span></div>
     <div class="hero-kpi"><span class="val">6%</span><span class="lbl">Target MRR Increase</span></div>
   </div>
@@ -226,12 +226,12 @@ html = f"""<!DOCTYPE html>
 <section id="summary">
   <div class="sec-eyebrow">Executive Summary</div>
   <div class="sec-title">The Numbers That Drive Q2</div>
-  <p class="sec-desc">Starting from a <strong>$242.6K MRR base</strong>, a <strong>6% growth target</strong> requires generating <strong>$18.15K in new MRR</strong> &mdash; net of a <strong>$3.6K monthly churn cost</strong>.</p>
+  <p class="sec-desc">Starting from a <strong>$242.6K MRR base</strong>, a <strong>6% growth target</strong> requires generating <strong>$18.17K in new MRR</strong> &mdash; net of a <strong>$3.6K monthly churn cost</strong>.</p>
   <div class="metric-strip">
     <div class="metric-card"><div class="metric-label">Current MRR Base</div><div class="metric-value">$242.6K</div><div class="metric-sub">Monthly Recurring Revenue</div></div>
     <div class="metric-card amber"><div class="metric-label">Churn Cost</div><div class="metric-value">$3.6K</div><div class="metric-sub">1.5% churn rate / month</div><span class="metric-badge warn">To offset</span></div>
-    <div class="metric-card green"><div class="metric-label">Net New MRR Needed</div><div class="metric-value">$18.15K</div><div class="metric-sub">= 6% &times; $242.6K + churn</div><span class="metric-badge">Q2 Target</span></div>
-    <div class="metric-card navy"><div class="metric-label">Blended ARPU Goal</div><div class="metric-value">&gt;$30</div><div class="metric-sub">+25% vs. current</div><span class="metric-badge">Long-term</span></div>
+    <div class="metric-card green"><div class="metric-label">Net New MRR Needed</div><div class="metric-value">$18.17K</div><div class="metric-sub">= 6% &times; $242.6K + churn</div><span class="metric-badge">Q2 Target</span></div>
+    <div class="metric-card navy"><div class="metric-label">Blended ARPU Goal</div><div class="metric-value">&gt;$30</div><div class="metric-sub">+26% vs. current</div><span class="metric-badge">Long-term</span></div>
   </div>
   <div class="two-col">
     <div>
@@ -244,7 +244,7 @@ html = f"""<!DOCTYPE html>
             <tr><td>Growth</td><td>$40.61</td><td class="num">80</td><td class="num">86</td><td class="num">$3,249</td><td class="num">$2,509</td></tr>
             <tr><td>Pro</td><td>$203.52</td><td class="num">20</td><td class="num">17</td><td class="num">$4,070</td><td class="num">$2,769</td></tr>
             <tr><td>Enterprise</td><td>$767.31</td><td class="num">4</td><td class="num">2</td><td class="num">$3,069</td><td class="num">$1,128</td></tr>
-            <tr class="total-row"><td>TOTAL</td><td>&mdash;</td><td class="num">224 <small style="font-weight:400;color:#64748b">(+20% vs Q2&apos;25)</small></td><td class="num">105</td><td class="num">$11,760</td><td class="num">$6,407</td></tr>
+            <tr class="total-row"><td>TOTAL</td><td>&mdash;</td><td class="num">224 <small style="font-weight:400;color:#64748b">(+5% Q4 avg)</small></td><td class="num">105</td><td class="num">$11,760</td><td class="num">$6,407</td></tr>
           </tbody>
         </table>
       </div>
@@ -256,10 +256,10 @@ html = f"""<!DOCTYPE html>
           <thead><tr><th>Metric</th><th>Q2 Target</th></tr></thead>
           <tbody>
             <tr><td>MRR Growth</td><td><strong>$18,167 &asymp; 6%</strong></td></tr>
-            <tr><td>G1 Conversion Rate</td><td><strong>&gt;2.5%</strong> <span style="color:#94a3b8;font-size:12px">(currently 1.54%)</span></td></tr>
-            <tr><td>G4/G1 Conversion</td><td><strong>&gt;30%</strong> <span style="color:#94a3b8;font-size:12px">(now 26%)</span></td></tr>
-            <tr><td>Blended ARPU (LT)</td><td><strong>&gt;$30</strong> <span style="color:#94a3b8;font-size:12px">(+25%)</span></td></tr>
-            <tr><td>New Accounts / Month</td><td><strong>+284</strong> <span style="color:#94a3b8;font-size:12px">(+20% vs Q2&apos;25)</span></td></tr>
+            <tr><td>G1 Conversion Rate</td><td><strong>&gt;2%</strong> <span style="color:#94a3b8;font-size:12px">(currently 1.63%)</span></td></tr>
+            <tr><td>G4/G1 Conversion</td><td><strong>&gt;25%</strong></td></tr>
+            <tr><td>Blended ARPU (LT)</td><td><strong>&gt;$30</strong> <span style="color:#94a3b8;font-size:12px">(+26%)</span></td></tr>
+            <tr><td>New Accounts / Month</td><td><strong>+224</strong> <span style="color:#94a3b8;font-size:12px">(+5% Q4 avg)</span></td></tr>
             <tr><td>Upsells / Month</td><td><strong>105 accounts</strong></td></tr>
           </tbody>
         </table>
@@ -315,7 +315,7 @@ html = f"""<!DOCTYPE html>
         <ul class="bullet">
           <li>Reduce time-to-value perception &mdash; show results before signup</li>
           <li>Move value perception from G3 to before G1</li>
-          <li>Increase G1 conversion rate from <strong>1.54% to &gt;2.5%</strong></li>
+          <li>Increase G1 conversion rate from <strong>1.63% to &gt;2%</strong></li>
         </ul>
         <div class="sub-heading gap-top">How</div>
         <ul class="bullet">
