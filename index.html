@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
   <title>TouchStay — Q2 2026 Product Strategy</title>
+  <script>
+    (function(){
+      var correct = '1608';
+      var stored = sessionStorage.getItem('ts_pin');
+      if (stored !== correct) {
+        var attempt = prompt('Enter PIN to access this page:');
+        if (attempt !== correct) {
+          document.documentElement.innerHTML = '<div style="font-family:sans-serif;text-align:center;padding:100px;color:#64748b"><h2>Access Denied</h2><p>Incorrect PIN. Please refresh and try again.</p></div>';
+          throw new Error('Access denied');
+        }
+        sessionStorage.setItem('ts_pin', correct);
+      }
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -184,7 +199,6 @@
   <div class="nav-inner">
     <div class="nav-logo">Touch<span>Stay</span> &mdash; Q2 2026</div>
     <ul class="nav-links">
-      <li><a href="#summary">Summary</a></li>
       <li><a href="#pillars">Pillars</a></li>
       <li><a href="#pillar-1">Value First</a></li>
       <li><a href="#pillar-2">Upsell</a></li>
@@ -198,61 +212,9 @@
 
 <div class="hero">
   <div class="hero-label">Q2 2026 &middot; Product Strategy &middot; V2</div>
-  <h1>+6% MRR growth through reduced time to value and upsell mechanisms</h1>
-  <div class="hero-kpis">
-    <div class="hero-kpi accent"><span class="val">$18,167</span><span class="lbl">MRR Growth Target</span></div>
-    <div class="hero-kpi"><span class="val">224</span><span class="lbl">New Accounts / Month</span></div>
-    <div class="hero-kpi"><span class="val">105</span><span class="lbl">Upsells / Month</span></div>
-    <div class="hero-kpi"><span class="val">6%</span><span class="lbl">Target MRR Increase</span></div>
-  </div>
 </div>
 
 <div class="page">
-
-<section id="summary">
-  <div class="sec-eyebrow">Executive Summary</div>
-  <div class="sec-title">The Numbers That Drive Q2</div>
-  <p class="sec-desc">Starting from a <strong>$242.6K MRR base</strong>, a <strong>6% growth target</strong> requires generating <strong>$18.17K in new MRR</strong> &mdash; net of a <strong>$3.6K monthly churn cost</strong>.</p>
-  <div class="metric-strip">
-    <div class="metric-card"><div class="metric-label">Current MRR Base</div><div class="metric-value">$242.6K</div><div class="metric-sub">Monthly Recurring Revenue</div></div>
-    <div class="metric-card amber"><div class="metric-label">Churn Cost</div><div class="metric-value">$3.6K</div><div class="metric-sub">1.5% churn rate / month</div><span class="metric-badge warn">To offset</span></div>
-    <div class="metric-card green"><div class="metric-label">Net New MRR Needed</div><div class="metric-value">$18.17K</div><div class="metric-sub">= 6% &times; $242.6K + churn</div><span class="metric-badge">Q2 Target</span></div>
-    <div class="metric-card navy"><div class="metric-label">Blended ARPU Goal</div><div class="metric-value">&gt;$30</div><div class="metric-sub">+26% vs. current</div><span class="metric-badge">Long-term</span></div>
-  </div>
-  <div class="two-col">
-    <div>
-      <div class="sub-heading">New Account &amp; Upsell Targets</div>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Tier</th><th>Proj. ARPU</th><th class="num">New (G4)</th><th class="num">Upsells</th><th class="num">New MRR</th><th class="num">Upsell MRR</th></tr></thead>
-          <tbody>
-            <tr><td>Starter</td><td>$11.43</td><td class="num">120</td><td class="num">&mdash;</td><td class="num">$1,371.60</td><td class="num">&mdash;</td></tr>
-            <tr><td>Growth</td><td>$40.61</td><td class="num">80</td><td class="num">86</td><td class="num">$3,248.80</td><td class="num">$2,509.48</td></tr>
-            <tr><td>Pro</td><td>$203.52</td><td class="num">20</td><td class="num">17</td><td class="num">$4,070.40</td><td class="num">$2,769.47</td></tr>
-            <tr><td>Enterprise</td><td>$767.31</td><td class="num">4</td><td class="num">2</td><td class="num">$3,069.24</td><td class="num">$1,127.58</td></tr>
-            <tr class="total-row"><td>TOTAL</td><td>&mdash;</td><td class="num">224 <small style="font-weight:400;color:#64748b">(+5% Q4 avg)</small></td><td class="num">105</td><td class="num">$11,760.04</td><td class="num">$6,406.53</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div>
-      <div class="sub-heading">Key Target Metrics</div>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Metric</th><th>Q2 Target</th></tr></thead>
-          <tbody>
-            <tr><td>MRR Growth</td><td><strong>$18,167 &asymp; 6%</strong></td></tr>
-            <tr><td>G1 Conversion Rate</td><td><strong>&gt;2%</strong> <span style="color:#94a3b8;font-size:12px">(currently 1.63%)</span></td></tr>
-            <tr><td>G4/G1 Conversion</td><td><strong>&gt;25%</strong></td></tr>
-            <tr><td>Blended ARPU (LT)</td><td><strong>&gt;$30</strong> <span style="color:#94a3b8;font-size:12px">(+26%)</span></td></tr>
-            <tr><td>New Accounts / Month</td><td><strong>+224</strong> <span style="color:#94a3b8;font-size:12px">(+5% Q4 avg)</span></td></tr>
-            <tr><td>Upsells / Month</td><td><strong>105 accounts</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="pillars">
   <div class="sec-eyebrow">Strategic Pillars</div>
@@ -489,41 +451,23 @@
           <th>MRR Category</th>
           <th>Impact</th>
           <th>Alignment</th>
+          <th>GTM Confidence</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>0</td>
-          <td>Other</td>
-          <td>Technical Maintenance</td>
-          <td>Foundation &amp; infrastructure work</td>
-          <td class="num ice-high">1000</td>
-          <td>&mdash;</td>
-          <td>&mdash;</td>
-          <td>&mdash;</td>
-        </tr>
-        <tr>
           <td>1</td>
-          <td>Other</td>
-          <td>1 USD/GBP/EUR/AUD/CAD Campaign</td>
-          <td>$1 / 3-month campaign ability via Stripe subscription API</td>
-          <td class="num ice-high">73.1</td>
-          <td><span class="mrr-badge mrr-new">New MRR</span></td>
-          <td>High</td>
-          <td><span class="priority-badge p-critic">Critic</span></td>
-        </tr>
-        <tr>
-          <td>2</td>
           <td>Upsell</td>
           <td>Legacy &rarr; Tier Upgrade Behavior</td>
-          <td>Replicate feature upgrade states Starter &rarr; Growth to Legacy &rarr; Tiered. 5-day trials, upgrade screen, intent signals to Pipedrive.</td>
+          <td>Replicate feature upgrade states Starter &rarr; Growth to Legacy &rarr; Tiered. 15-day trials, upgrade screen, intent signals to Pipedrive. Trial Pro plan should have all features active.</td>
           <td class="num ice-high">240</td>
           <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
           <td>Very High</td>
           <td><span class="priority-badge p-critic">Critic</span></td>
+          <td>High</td>
         </tr>
         <tr>
-          <td>3</td>
+          <td>2</td>
           <td>Upsell</td>
           <td><a href="https://store-activation-to-growth.vercel.app/" target="_blank" style="color:inherit;">Store ROI Calculator</a> Upgrade</td>
           <td><a href="https://store-activation-to-growth.vercel.app/" target="_blank" style="color:inherit;">ROI calculator</a> and upgrade form from Legacy to Tiers page</td>
@@ -531,89 +475,32 @@
           <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
           <td>Very High</td>
           <td><span class="priority-badge p-critic">Critic</span></td>
+          <td>Very High</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Other</td>
+          <td>1 USD/GBP/EUR/AUD/CAD Campaign</td>
+          <td>$1 / 3-month campaign ability via Stripe subscription API</td>
+          <td class="num ice-high">73.1</td>
+          <td><span class="mrr-badge mrr-new">New MRR</span></td>
+          <td>High</td>
+          <td><span class="priority-badge p-critic">Critic</span></td>
+          <td>Very High</td>
         </tr>
         <tr>
           <td>4</td>
           <td>Value First</td>
           <td>HomePage &mdash; AI Sign-up &amp; Preview</td>
-          <td>Side-by-side chatbot + live guidebook preview. Chatbot mimics sign-up flow conversationally. Primary G1 driver.</td>
+          <td>Side-by-side chatbot + live guidebook preview. Mimics sign-up flow through chatbot. Phase 1.1: place on Homepage and other key pages. Primary G1 driver.</td>
           <td class="num ice-high">100</td>
           <td><span class="mrr-badge mrr-new">New MRR</span></td>
           <td>Very High</td>
           <td><span class="priority-badge p-critic">Critic</span></td>
+          <td>High</td>
         </tr>
         <tr>
           <td>5</td>
-          <td>Upsell</td>
-          <td>Cancel / Downgrade Reasons</td>
-          <td>Centralise voice-of-customer data on plan &amp; quantity changes. Integrate to Pipedrive.</td>
-          <td class="num ice-mid">81</td>
-          <td><span class="mrr-badge mrr-retain">Retention MRR</span></td>
-          <td>Mid</td>
-          <td><span class="priority-badge p-high">High</span></td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Message Hub</td>
-          <td>2WM &mdash; 10DLC &amp; Brand Registration</td>
-          <td>Opt-out SMS compliance for +1 numbers before any SMS is sent. Store opt-out flag on contact and invitation.</td>
-          <td class="num ice-mid">61.7</td>
-          <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
-          <td>Mid</td>
-          <td><span class="priority-badge p-critic">Critic</span></td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Message Hub</td>
-          <td>Chatbot Escalation &amp; Notification</td>
-          <td>Detect guest frustration or human-intervention requests via SMS. Notify host, update contact info if missing.</td>
-          <td class="num ice-mid">86.4</td>
-          <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
-          <td>Mid</td>
-          <td><span class="priority-badge p-critic">Critic</span></td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>Value First</td>
-          <td>Manual GB Creation &mdash; AI Assisted</td>
-          <td>AI-guided creation for non-OTA-link users. From demo content to share-ready state through conversational flow.</td>
-          <td class="num ice-mid">20.6</td>
-          <td><span class="mrr-badge mrr-new">New MRR</span></td>
-          <td>High</td>
-          <td><span class="priority-badge p-high">High</span></td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>Message Hub</td>
-          <td>Train Chatbot</td>
-          <td>Structured Q&amp;A list + document upload for chatbot training. Label by guidebook, org, or account level.</td>
-          <td class="num ice-mid">36</td>
-          <td><span class="mrr-badge mrr-retain">Retention MRR</span></td>
-          <td>Mid</td>
-          <td><span class="priority-badge p-critic">Critic</span></td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>Other</td>
-          <td>Task Manager &mdash; Collaborative Work</td>
-          <td>Collaborative workflows to drive multi-seat need and Growth &rarr; Pro upgrades.</td>
-          <td class="num ice-mid">30.4</td>
-          <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
-          <td>Mid</td>
-          <td><span class="priority-badge p-high">High</span></td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>Message Hub</td>
-          <td>CRM Polishing</td>
-          <td>Download, filter/sorting, contact deletion, invitation-to-contact interaction, create task from CRM.</td>
-          <td class="num ice-mid">30.4</td>
-          <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
-          <td>Mid</td>
-          <td><span class="priority-badge p-high">High</span></td>
-        </tr>
-        <tr>
-          <td>12</td>
           <td>Store</td>
           <td>Store Tips</td>
           <td>Add Tips as a template product to give property owners ideas for their store.</td>
@@ -621,16 +508,106 @@
           <td><span class="mrr-badge mrr-new">New MRR</span></td>
           <td>Low</td>
           <td><span class="priority-badge p-mid">Mid</span></td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Upsell</td>
+          <td>Cancel / Downgrade Reasons</td>
+          <td>Centralise voice-of-customer data on plan &amp; quantity changes. Integrate to Pipedrive.</td>
+          <td class="num ice-mid">81</td>
+          <td><span class="mrr-badge mrr-retain">Retention MRR</span></td>
+          <td>Mid</td>
+          <td><span class="priority-badge p-high">High</span></td>
+          <td>Mid</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Other</td>
+          <td>Technical Maintenance</td>
+          <td>Foundation &amp; infrastructure work</td>
+          <td class="num ice-high">1000</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Message Hub</td>
+          <td>2WM &mdash; 10DLC &amp; Brand Registration</td>
+          <td>Opt-out SMS compliance for +1 numbers before any SMS is sent. Store opt-out flag on contact and invitation. Invitation messages get &ldquo;Opt out&rdquo; status.</td>
+          <td class="num ice-mid">61.7</td>
+          <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
+          <td>Mid</td>
+          <td><span class="priority-badge p-critic">Critic</span></td>
+          <td>Very High</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Message Hub</td>
+          <td>Chatbot Escalation &amp; Parties Notification</td>
+          <td>Detect guest frustration or human-intervention requests via SMS. Notify host, update contact info if missing.</td>
+          <td class="num ice-mid">86.4</td>
+          <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
+          <td>Mid</td>
+          <td><span class="priority-badge p-critic">Critic</span></td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Value First</td>
+          <td>Manual GB Creation &mdash; AI Assisted</td>
+          <td>AI-guided creation for non-OTA-link users. From demo content to share-ready state through conversational flow.</td>
+          <td class="num ice-mid">20.6</td>
+          <td><span class="mrr-badge mrr-new">New MRR</span></td>
+          <td>High</td>
+          <td><span class="priority-badge p-high">High</span></td>
+          <td>Mid</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Message Hub</td>
+          <td>Message Hub &mdash; Train Chatbot</td>
+          <td>Chatbot training via structured Q&amp;A list &amp; document upload. Label by guidebook, org, or account level.</td>
+          <td class="num ice-mid">36</td>
+          <td><span class="mrr-badge mrr-retain">Retention MRR</span></td>
+          <td>Mid</td>
+          <td><span class="priority-badge p-critic">Critic</span></td>
+          <td>Very High</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Other</td>
+          <td>Task Manager &mdash; Collaborative Work</td>
+          <td>Improve Task Manager with collaborative workflows to drive multi-seat needs and Growth &rarr; Pro upgrades.</td>
+          <td class="num ice-mid">30.4</td>
+          <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
+          <td>Mid</td>
+          <td><span class="priority-badge p-high">High</span></td>
+          <td>Very High</td>
         </tr>
         <tr>
           <td>13</td>
+          <td>Message Hub</td>
+          <td>CRM Polishing</td>
+          <td>Download, filter/sorting, contact deletion, invitation-to-contact interaction, create task from CRM.</td>
+          <td class="num ice-mid">30.4</td>
+          <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
+          <td>Mid</td>
+          <td><span class="priority-badge p-high">High</span></td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>14</td>
           <td>Upsell</td>
-          <td>Split Campaign Manager</td>
-          <td>Separate Campaign Manager between Starter and Growth. Store campaigns moved to Store section.</td>
+          <td>Split Campaign Manager &mdash; Store &amp; Message Hub</td>
+          <td>Split Campaign Manager between Starter and Growth. Store Campaigns &rarr; Store section. Campaigns &rarr; Message Hub.</td>
           <td class="num ice-mid">21.6</td>
           <td><span class="mrr-badge mrr-upsell">Upsell MRR</span></td>
           <td>Low</td>
           <td><span class="priority-badge p-high">High</span></td>
+          <td>Very High</td>
         </tr>
       </tbody>
     </table>
