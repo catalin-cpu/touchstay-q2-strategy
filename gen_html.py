@@ -1,16 +1,16 @@
 import base64
 
 def b64(name):
-    with open(f'C:/Users/catal/Desktop/pdf_images/{name}.png', 'rb') as f:
+    with open(f'images/{name}.png', 'rb') as f:
         return 'data:image/png;base64,' + base64.b64encode(f.read()).decode()
 
-p2  = b64('p2_img1')
-p4a = b64('p4_img1')
-p4b = b64('p4_img2')
-p6a = b64('p6_img1')
-p6b = b64('p6_img2')
-p6c = b64('p6_img3')
-p6d = b64('p6_img4')
+p2  = b64('p2')
+p4a = b64('p4a')
+p4b = b64('p4b')
+p6a = b64('p6a')
+p6b = b64('p6b')
+p6c = b64('p6c')
+p6d = b64('p6d')
 
 html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -375,7 +375,7 @@ html = f"""<!DOCTYPE html>
         <ul class="bullet">
           <li><strong>2,000 current Legacy clients</strong> pay $0&ndash;3/property to upgrade to Growth tier pricing</li>
           <li><strong>$40K total upsell MRR potential</strong> across the base</li>
-          <li>Pair with opt-in migration incentives and <a href="https://store-activation-to-growth.vercel.app/" target="_blank" style="color:inherit;">ROI Calculator</a> to de-risk the ask</li>
+          <li>Pair with opt-in migration incentives and <a href="https://store-activation-to-growth.vercel.app/" target="_blank" style="color:inherit;">Store ROI Calculator</a> to de-risk the ask</li>
         </ul>
       </div>
       <div>
@@ -387,7 +387,7 @@ html = f"""<!DOCTYPE html>
         </ul>
         <div class="sub-heading gap-top">Tactic 4 &mdash; Upsell Signals to Pipedrive</div>
         <ul class="bullet">
-          <li><strong>5-day feature trials</strong> on Growth/Pro features for Legacy &amp; Starter accounts</li>
+          <li><strong>15-day feature trials</strong> on Growth/Pro features for Legacy &amp; Starter accounts</li>
           <li>Trial expires &rarr; upgrade screen presented automatically</li>
           <li>Trial start &amp; end signals sent to Pipedrive to alert sales</li>
         </ul>
